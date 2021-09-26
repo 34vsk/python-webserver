@@ -61,6 +61,7 @@ def start_server():
 # Handle Ctrl+C event
 try:
     print("Starting http server...")
+    print("Navigate to http://localhost:"+str(PORT))
     start_server()
 
 # press Ctrl+C to stop server
