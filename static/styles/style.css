@@ -1,0 +1,77 @@
+/* import custom font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* set font for all text inside body tag */
+  font-family: "Poppins", sans-serif;
+  /* set body width to 100% */
+  width: 100vw;
+  /* set body height to 100% */
+  height: 100vh;
+  /* center body content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  /* set shadow for card class */
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  /* set padding for card's child components */
+  padding: 30px;
+  /* center card content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* set card width to 500px */
+  width: 500px;
+  /* set animation speed */
+  transition: 0.5s ease-out 50ms;
+}
+/* change shadow when card is hovered */
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.322) 0px 5px 15px 0px;
+}
+
+.card .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .text img {
+  height: 170px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card .text h3 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.card .text #designation {
+  color: #55b6c2;
+  font-size: 15px;
+}
+
+.card .text #bio {
+  margin: 10px;
+  width: 90%;
+  text-align: center;
+}
+
+.card .links {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card .links i {
+  color: #55b6c2;
+  font-size: 20px;
+  cursor: pointer;
+}
